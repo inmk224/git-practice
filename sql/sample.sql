@@ -29,4 +29,7 @@ WHERE DLFLG = '0'
 GROUP BY INSTCD
 ORDER BY item_count DESC;
 
+-- 品目タイプ別の最新
+-- orororororororroro
 -- 品目タイプ別の最新更新日
+
