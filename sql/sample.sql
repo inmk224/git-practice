@@ -1,0 +1,18 @@
+-- サンプルSQL
+-- 医療品目マスターテーブルの抽出クエリ
+
+SELECT 
+    INSTCD,
+    ITEMTYPCD,
+    ITEMTYPNM,
+    DLFLG,
+    UPDDATE
+FROM MITEMTYPE
+WHERE DLFLG = '0'
+  AND UPDDATE >= TRUNC(SYSDATE) - 30
+ORDER BY UPDDATE DESC;
+
+-- 削除済み品目の確認
+SELECT COUNT(*) AS delete_count
+FROM MITEMTYPE
+WHERE DLFLG = '1';
