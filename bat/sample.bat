@@ -23,3 +23,5 @@ echo [%date% %time%] 処理完了 >> !LOG_FILE!
 echo 処理完了。詳細は %LOG_FILE% を確認してください。
 
 pause
+
+echo
